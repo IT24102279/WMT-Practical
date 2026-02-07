@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Travel Adventures</title>
+
+    <!-- External CSS for the table (Part C) -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Embedded CSS for navigation bar (Part B) -->
+    <style>
+        /* table {
+        width: 80%;
+        border-collapse: collapse;
+        margin: 20px auto;
+        background-color: #f2f2f2;}
+        
+        th, td {
+        border: 1px solid O#333;
+        padding: 8px;
+        text-align: left;
+        
+        }
+        
+        th {
+        background-color:#4CAF50;
+        color: white; }
+        
+        .row1 { background-color: #ffffff; }
+        .row2 { background-color: #e6ffe6; }
+        
+        body {
+            margin: 0;
+            padding: 0;
+        } */
+
+        /* Navigation bar */
+        ul.nav {
+            list-style-type: none;
+            background-color: #2c3e50;
+            padding: 10px;
+            margin: 0;
+        }
+
+        ul.nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        ul.nav li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        ul.nav li a:hover {
+            color: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar (Part B) -->
+<ul class="nav">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Destinations</a></li>
+    <li><a href="#">Contact</a></li>
+</ul>
+
+<!-- Main Heading with Inline CSS (Part A - 1) -->
+<h1 style="text-align: center; color: #003366; margin-top: 20px;">
+    Travel Adventures
+</h1>
+
+<!-- Introductory Paragraph with Inline CSS (Part A - 2) -->
+<p style="text-align: center; margin: 15px; line-height: 1.6;">
+    Travel Adventures helps you explore new destinations and plan your journey in a simple and organized way. 
+    It also provides <i>useful tips and cost estimates</i> to make your travel stress-free.
+</p>
+
+<!-- Image and Link with Inline CSS (Part A - 3) -->
+<div style="text-align: center; margin: 20px;">
+    <img src="images/image.jpg" 
+         alt="Travelling" 
+         width="300" 
+         height="200" 
+         style="border: 2px solid #333; padding: 5px;">
+    <p>
+        <a href="https://www.srilanka.travel/" target="_blank">
+            Visit the official website of Sri Lanka Tourism
+        </a>
+    </p>
+</div>
+
+<hr>
+
+<h2>Packing Essentials</h2>
+<p>Good preparation helps travellers enjoy a safe and comfortable journey.</p>
+
+<ol>
+    <li>Clothes</li>
+    <li>Travel Documents</li>
+    <li>Gadgets
+        <ul>
+            <li>Laptop</li>
+            <li>Smartphone</li>
+        </ul>
+    </li>
+    <li>Toiletries</li>
+</ol>
+
+<h2>Trip Cost Overview</h2>
+
+
+
+<table class="trip-table">
+    <tr>
+        <th>Item</th>
+        <th>Cost (USD)</th>
+        <th>Notes</th>
+        <th>Included Items</th>
+    </tr>
+    <tr class="row1">
+        <td>Flight Ticket</td>
+        <td>1200</td>
+        <td>Round trip</td>
+        <td>
+            <ul>
+                <li>Seat reservation</li>
+                <li>Airport taxes</li>
+            </ul>
+        </td>
+    </tr>
+    <tr class="row2">
+        <td>Hotel</td>
+        <td>800</td>
+        <td>7 nights</td>
+        <td>
+            <ul>
+                <li>Breakfast</li>
+                <li>Free Wi-Fi</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>Food</td>
+        <td>400</td>
+        <td>Estimated</td>
+        <td>
+            <ul>
+                <li>Lunch</li>
+                <li>Dinner</li>
+            </ul>
+        </td>
+    </tr>
+</table>
+
+<h2>Travel Information</h2>
+
+<p>Please enter your details</p>
+
+<!-- Improved form using fieldset and legend -->
+<form>
+    <fieldset>
+        <legend>Personal Details</legend>
+        
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <input type="submit" value="Submit">
+    </fieldset>
+</form>
+
+<hr>
+
+<footer class="foot">
+    <p>Created by: Ranindu Wathsal</p>
+    <a href="https://courseweb.sliit.lk/user/profile.php">Link to student Profile</a>
+</footer>
+
+</body>
+</html>
