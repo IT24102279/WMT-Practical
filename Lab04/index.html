@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Library Seat Booking</title>
+        <script src = "https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    </head>
+    <body>
+        <h1 id="pageTitle">University Library Seat Booking</h1>
+
+        <img id="libraryImage" src="https://media.istockphoto.com/id/505551939/photo/library.jpg?s=612x612&w=0&k=20&c=lGwjpaVR2__plgaEeRiLZ0n1up16Zm3PW6zlR4paabI=" width="400">
+
+        <p id="infoText">
+            Reserve your study seat in advance.
+        </p>
+        <hr>
+
+        <h2>Book a Seat</h2>
+
+        <form id="bookingForm">
+            <label> Student Name:</label><br>
+            <input type="text" id="studentName"><br><br>
+
+
+            <label>Student Email:</label><br>
+            <input type="email" id="studentEmail"><br><br>
+
+            <input type="submit" value="Book Seat">
+        </form>
+        <hr>
+
+        <h2>Seat Categories</h2>
+
+        <table border="1" cellpadding="8", cellspacing ="0" id="seatTable">
+            <tr>
+                <th>Seat Type</th>
+                <th>Floor</th>
+            </tr>
+            <tr>
+                <td>Silent Study</td>
+                <td>1st Floor</td>
+            </tr>
+            <tr>
+                <td>Group Study</td>
+                <td>2nd Floor</td>
+            </tr>
+        </table>
+        <hr>
+        <h2>Booked Seats</h2>
+
+        <table border="1" cellpadding="8", cellspacing ="0" id="bookingTable">
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Action</th>
+            </tr>
+        </table>
+        <script src="IT24102279.js"></script>
+    </body>
+</html>
