@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Travel Adventures - In Class Test</title>
+  <link rel="stylesheet" href="styles.css">
+</head> 
+
+<div id="shoppingSection">
+    <h2>Shopping List</h2>
+    <form id="shoppingForm">
+      <label>Item Name:</label><br>
+      <input type="text" id="itemName"><br><br>
+      <label>Quantity:</label><br>
+      <input type="number" id="itemQuantity" min="1"><br><br>
+      <button type="submit">Add Item</button>
+    </form>
+    <p id="shoppingError" style="color: red;"></p>
+    <h3>Items:</h3>
+    <ul id="shoppingList"></ul>
+  </div>
+<body>
+
+  <h1>Travel Adventures</h1>
+
+  <!-- Dynamic Item List Section (will be populated by JavaScript) -->
+  <div id="dynamic-section-container"></div>
+
+  <h3><b>Welcome to Travel Adventures!</b></h3>
+
+  <p>
+    This website is your go-to resource for planning your next trip.<br>
+    <i>Explore the world with ease and excitement!</i><br>
+    You'll find essential packing tips, trip cost breakdowns, and helpful travel information.
+  </p>
+
+  <div>
+    <img id="travelImg" src="./inaki-del-olmo-NIJuEQw0RKg-unsplash.jpg" width="300" height="200" alt="travel image">
+    <br>
+    <a href="https://www.srilanka.travel/" target="_blank">
+      Visit the official website of Sri Lanka Tourism
+    </a>
+  </div>
+
+  <h2>Packing Essentials</h2>
+
+  <p>Good preparation helps travelers enjoy a safe and comfortable journey.</p>
+
+  <ol>
+    <li>Clothes</li>
+    <li>Travel Documents</li>
+    <li>Gadgets
+      <ul>
+        <li>Laptop</li>
+        <li>Smartphone</li>
+      </ul>
+    </li>
+    <li>Toiletries</li>
+  </ol>
+
+  <h3>Trip Cost Overview</h3>
+
+  <table border="1" cellpadding="8" cellspacing="0" id="costTable" class="trip-table">
+    <tr>
+      <th>Item</th>
+      <th>Cost (USD)</th>
+      <th>Notes</th>
+      <th>Included Items</th>
+    </tr>
+    <tr>
+      <td>Flight Ticket</td>
+      <td>1200</td>
+      <td>Round trip</td>
+      <td>
+        <ul>
+          <li>Snacks</li>
+          <li>Wi-Fi</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>Hotel</td>
+      <td>800</td>
+      <td>7 nights</td>
+      <td>
+        <ul>
+          <li>Free Breakfast</li>
+          <li>Swimming Pool Access</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>Food</td>
+      <td>400</td>
+      <td>Estimated</td>
+      <td>
+        <ul>
+          <li>Buffet Breakfast</li>
+          <li>Local Cuisine</li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+
+  <h2>Traveler Information</h2>
+  <p>Please enter your details:</p>
+
+  <form id="studentForm">
+    <label>Name:</label><br>
+    <input type="text" id="name"><br><br>
+
+    <label>Age:</label><br>
+    <input type="number" id="age"><br><br>
+
+    <label>Email:</label><br>
+    <input type="email" id="email"><br><br>
+
+    <label>Phone Number:</label><br>
+    <input type="text" id="phone" placeholder="Enter 10 digit number"><br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+
+  <p class="note">Check the browser console to see stored students</p>
+
+  <hr>
+
+  <h2>Registered Travelers</h2>
+
+  <label for="ageFilter"><b>Filter Travelers:</b></label>
+  <select id="ageFilter">
+    <option value="all">All</option>
+    <option value="under18">Under 18</option>
+    <option value="adult">18 - 59</option>
+    <option value="senior">60+</option>
+  </select>
+  <br><br>
+
+  <table border="1" cellpadding="8" cellspacing="0" id="travelerTable">
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Email</th>
+      <th>Action</th>
+    </tr>
+  </table>
+
+  <hr>
+
+  <footer>
+    <p>Created by : Helambage H.D.R.W></p>
+  </footer>
+  
+  <script src="IT24102279.js"></script>
+
+</body>
+</html>
